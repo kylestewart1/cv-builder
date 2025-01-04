@@ -1,13 +1,11 @@
 import './App.css'
-import GeneralInformation from './components/GeneralInformation'
-import Education from './components/Education'
+import FormContainer from './components/FormContainer'
 
 function App() {
 
   return (
     <>
-      <GeneralInformation />
-      <Education />
+      <FormContainer />
     </>
   )
 }

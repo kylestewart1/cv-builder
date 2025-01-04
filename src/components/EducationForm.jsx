@@ -1,4 +1,3 @@
-import "../styles/Education.css";
 
 function range(min, max) {
   const values = [];
@@ -8,11 +7,11 @@ function range(min, max) {
   return values;
 }
 
-export default function Education() {
+export default function EducationForm() {
   const graduationYears = range(1950, 2030);
 
   return (
-    <fieldset className="education">
+    <div className="input-container">
       <h2>Education</h2>
       <label>
         School <br/>
@@ -30,6 +29,6 @@ export default function Education() {
           })}
         </select>
       </label>
-    </fieldset>
+    </div>
   )
 }
