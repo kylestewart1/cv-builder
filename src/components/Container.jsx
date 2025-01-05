@@ -4,7 +4,7 @@ import WorkExperience from "./WorkExperience";
 
 export default function Container() {
   return (
-    <div className="form-container">
+    <div className="container">
       <GeneralInformation />
       <Education />
       <WorkExperience />
