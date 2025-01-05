@@ -1,4 +1,4 @@
-export default function WorkExperienceForm() {
+export default function WorkExperience() {
   return (
     <div className="input-container">
       <h2>Work Experience</h2>

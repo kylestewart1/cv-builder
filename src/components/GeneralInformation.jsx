@@ -1,5 +1,5 @@
 
-export default function GeneralInformationForm() {
+export default function GeneralInformation() {
   return (
     <div className="input-container">
       <h2>General Information</h2>

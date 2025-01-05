@@ -1,11 +1,11 @@
 import './App.css'
-import FormContainer from './components/FormContainer'
+import Container from './components/Container'
 
 function App() {
 
   return (
     <>
-      <FormContainer />
+      <Container />
     </>
   )
 }
