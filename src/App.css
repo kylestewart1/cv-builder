@@ -5,12 +5,18 @@
   text-align: center;
 }
 
+body {
+  background-color: rgb(0, 162, 255);
+}
+
 .container {
+  background-color: white;
   min-width: 400px;
-  max-width: 1000px;
-  width: 800px;
+  max-width: 1200px;
+  width: 1000px;
   padding: 20px;
-  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -19,16 +25,20 @@
 
 .section {
   min-width: 300px;
-  width: 90%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
+}
+
+.form {
+  width: 100%;
 }
 
 .input-container {
   width: 100%;
+  justify-self: center;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: space-evenly;
   align-items: center;
   text-align: start;
 }

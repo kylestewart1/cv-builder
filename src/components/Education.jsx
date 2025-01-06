@@ -37,7 +37,7 @@ export default function Education() {
 
   const listItems = education.map(educationItem => {
     return (
-      <li key={educationItem.id} >
+      <li key={educationItem.id}>
         {<EducationItem
             id={educationItem.id} 
             school={educationItem.school}
@@ -46,8 +46,12 @@ export default function Education() {
             editing={educationItem.editing}
             updateHandler={handleItemUpdate}
           />} 
-        <button className="edit-button" onClick={() => handleItemUpdate(educationItem.id, "editing", true)}>Edit</button>
-        <button className="delete-button" onClick={() => handleDeleteItem(educationItem.id)}>Delete</button>
+        {educationItem.editing ? null
+          : <>
+              <button className="edit-button" onClick={() => handleItemUpdate(educationItem.id, "editing", true)}>Edit</button>
+            </>
+        }
+        {<button className="delete-button" onClick={() => handleDeleteItem(educationItem.id)}>Delete</button>}
       </li>
     )
   });

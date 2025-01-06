@@ -1,7 +1,11 @@
 .education-item {
+  padding-left: 5px;
+  padding-right: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  justify-items: start;
+  column-gap: 10px;
 }
 
 .school {
@@ -17,4 +21,5 @@
 .year {
   grid-row: 2 / -1;
   grid-column: 2 / -1;
+  justify-self: end;
 }
