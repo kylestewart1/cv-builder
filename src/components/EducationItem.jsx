@@ -15,7 +15,7 @@ export default function EducationItem({ id, school, degree, year, editing, updat
   if (editing) {
     const graduationYears = range(1950, 2030);
     return (
-      <div className="input-container">
+      <div className="education-item-input">
         <label>
           School <br/>
           <input

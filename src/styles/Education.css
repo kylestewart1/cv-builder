@@ -10,17 +10,29 @@
 }
 
 .education > ul {
-  width: 100%;
+  max-width: 1000px;
   padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 20px;
 }
 
 .education > ul > li {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  display: grid;
+}
+
+.education > ul > li.editing {
+  grid-template-columns: 5fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.education > ul > li.not-editing {
+  max-width: 800px;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.education > ul > li > button {
+  align-self: flex-start;
+  padding-top: 10px;
 }

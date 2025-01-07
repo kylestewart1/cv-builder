@@ -1,3 +1,5 @@
+import "../styles/WorkExperienceItem.css"
+
 export default function WorkExperienceItem({ id, organization, jobTitle, description, startDate, endDate, editing, updateHandler}) {
 
   const onChange = (e) => updateHandler(id, e.target.name, e.target.value);
@@ -5,7 +7,7 @@ export default function WorkExperienceItem({ id, organization, jobTitle, descrip
 
   if (editing) {
     return (
-      <div className="input-container">
+      <div className="work-experience-input">
         <label>
           Job Title <br/>
           <input 
@@ -60,8 +62,7 @@ export default function WorkExperienceItem({ id, organization, jobTitle, descrip
         <h3 className="job-title">{jobTitle}</h3>
         <span className="organization">{organization}</span>
         <p className="job-description">{description}</p>
-        <span className="start-date">{startDate}</span>
-        <span className="end-date">{endDate}</span>
+        <span className="dates">{startDate} - {endDate}</span>
       </div>
     )
   }

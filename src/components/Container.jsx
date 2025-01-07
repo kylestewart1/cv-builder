@@ -8,7 +8,6 @@ export default function Container() {
       <GeneralInformation />
       <Education />
       <WorkExperience />
-      <button type="submit">Create CV</button>
     </div>
   )
 }

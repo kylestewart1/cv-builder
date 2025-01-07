@@ -8,6 +8,11 @@
   column-gap: 10px;
 }
 
+.education-item-input {
+  display: flex;
+  gap: 20px;
+}
+
 .school {
   grid-row: 1 / 2;
   grid-column: 1 / -1;

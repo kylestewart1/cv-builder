@@ -37,7 +37,7 @@ export default function Education() {
 
   const listItems = education.map(educationItem => {
     return (
-      <li key={educationItem.id}>
+      <li key={educationItem.id} className={educationItem.editing ? "editing" : "not-editing"}>
         {<EducationItem
             id={educationItem.id} 
             school={educationItem.school}

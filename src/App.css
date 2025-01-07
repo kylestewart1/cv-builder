@@ -42,3 +42,8 @@ body {
   align-items: center;
   text-align: start;
 }
+
+button {
+  height: 50px;
+}
+

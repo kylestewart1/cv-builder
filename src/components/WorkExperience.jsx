@@ -1,5 +1,6 @@
 import { useState } from "react"
 import WorkExperienceItem from "./WorkExperienceItem";
+import "../styles/WorkExperience.css"
 
 export default function WorkExperience() {
   const [experience, setExperience] = useState([]);
@@ -47,8 +48,12 @@ export default function WorkExperience() {
             endDate={experienceItem.endDate}
             editing={experienceItem.editing}
             updateHandler={handleItemUpdate}
-          />} 
-        <button className="edit-button" onClick={() => handleItemUpdate(experienceItem.id, "editing", true)}>Edit</button>
+          />}
+          {experienceItem.editing ? null
+          : <>
+              <button className="edit-button" onClick={() => handleItemUpdate(experienceItem.id, "editing", true)}>Edit</button>
+            </>
+        }
         <button className="delete-button" onClick={() => handleDeleteItem(experienceItem.id)}>Delete</button>
       </li>
     )
