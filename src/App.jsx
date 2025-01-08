@@ -5,6 +5,7 @@ function App() {
 
   return (
     <>
+      <h1 className='page-title'>CV Builder</h1>
       <Container />
     </>
   )
